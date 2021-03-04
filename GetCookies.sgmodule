@@ -2,7 +2,7 @@
 #!system=ios
 
 [MITM]
-hostname = %APPEND% api.m.jd.com, account.huami.com, wq.jd.com,m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com
+hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com
 
 [Script]
 
