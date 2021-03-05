@@ -2,7 +2,7 @@
 #!system=ios
 
 [MITM]
-hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com
+hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com, api.myb6api.*:8080, jk.5apk.cn, 69shipin.vip, ws.60he.com
 
 [Script]
 
@@ -17,3 +17,18 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientacces
 宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_run.js
 
 
+#菠萝视频解锁无限看
+#下载地址：https://aff.polomv.com/af/edrJ
+^http:\/\/api\.myb6api\.(.+):8080\/api\.php\/api\/users\/getBaseInfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/sngxblsp.js
+
+#辣椒视频解锁会员(少年歌行pro製作，轉載請保留出處信息)
+#下载地址：http://sdfvs.cxfbhy.live/?code=67JALF
+^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
+
+#69视频解锁会员(少年歌行pro製作，轉載請保留出處信息)
+#69視頻下載地址：http://app.exxanz.com/?code=SQDDAH
+^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
+^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200
+
+#pythonai破解vip(少年歌行pro@黑科技製作)
+^http:\/\/ws\.60he\.com\/(book|user).+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/pythonai/pythonai.js
