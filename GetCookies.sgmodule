@@ -28,6 +28,6 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientacces
 ^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
 ^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200
 
-#FainTV解锁会员去广告
-^http:\/\/ftvn\.hawsing\.com\.tw:3000\/client\/login url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/fatv.js
-
+# 中国移动
+^https:\/\/clientaccess.10086.cn\/biz-orange\/LN\/uamrandcodelogin\/autoLogin - script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js
+^https:\/\/clientaccess.10086.cn\/biz-orange\/BN\/realFeeQuery\/getRealFee - script-request-body https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.fee.cookie.js
