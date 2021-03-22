@@ -3,7 +3,8 @@
   "author": "Tulan自用"
   "desc": "该订阅仅适用于 elecV2P，与其他软件并不兼容。",
   "date": "2021-03-22 ",
-  "list": [
+  "list":
+  [
     {
       "name": "京东联想集卡活动",
       "type": "cron",
