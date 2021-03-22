@@ -1,7 +1,7 @@
 {
   "name": "Tuland",
   "author": "Tulan自用"
-  "list": [
+  "list" [
     {
       "name": "京东联想集卡活动",
       "type": "cron",
