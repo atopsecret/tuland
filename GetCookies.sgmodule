@@ -31,4 +31,6 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientacces
 #解绑京东会员卡
 ^(https://shopmember.m.jd.com/member/membersRule\?(?!.*sign=member.*)) url 302 $1sign=member&
 
+#京喜工厂收取店力
+https://m.jingxi.com/dreamfactory/generator/CollectCurrentElectricity? url script-request-header https://raw.githubusercontent.com/ZhiYi-N/Private-Script/master/Scripts/jxcollect.js
 
