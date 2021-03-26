@@ -2,7 +2,7 @@
 #!system=ios
 
 [MITM]
-hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com, api.myb6api.*:8080, jk.5apk.cn, 69shipin.vip, ws.60he.com, ftvn.hawsing.com.tw:3000, shopmember.m.jd.com, 
+hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com, api.myb6api.*:8080, jk.5apk.cn, 69shipin.vip, ws.60he.com, ftvn.hawsing.com.tw:3000, shopmember.m.jd.com, api.rcljx.com，
 
 [Script]
 
@@ -27,6 +27,10 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientacces
 #69视频解锁会员
 ^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
 ^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200
+
+#91视频-下载地址：https://app.18sa.xyz/i-S3FM6X
+
+^https://api.rcljx.com url request-header (\r\n)X-AUTH-TOKEN:.+(\r\n) request-header $1X-AUTH-TOKEN:eyJhbGciOiJIUzUxMiIsImlhdCI6MTYxNjczNTcxOCwiZXhwIjoxOTMyMDk1NzE4fQ.eyJpZCI6NDEwODI3MzF9.FpVBEFqi0Jh_ywCZP-uoWm8O_yfRsKVhhr6ST-4gG2UGIdF-2BisL_LuWtDB3uiFonKeLF9bgmyaSdOo6yAM5g$2
 
 #解绑京东会员卡
 ^(https://shopmember.m.jd.com/member/membersRule\?(?!.*sign=member.*)) url 302 $1sign=member&
