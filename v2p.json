@@ -1,8 +1,8 @@
 {
-  "name": "tuland的V2P订阅",
-  "author": "tuland",
-  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容,
-  "date": "2021-03-26 09:00:43",
+  "name": "elecV2P 定时任务订阅",
+  "author": "留个名字",
+  "desc": "xx 导出的任务订阅。该订阅适用于 elecV2P，与其他软件并不兼容。相关说明参考：https://github.com/elecV2/elecV2P-dei/tree/master/docs/06-task.md",
+  "date": "2021-03-26 09:06:35",
   "list": [
     {
       "name": "京东资产变动通知",
@@ -461,15 +461,6 @@
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js"
-      }
-    },
-    {
-      "name": "疯狂的joy挂机",
-      "type": "cron",
-      "time": "10 7 * * *",
-      "job": {
-        "type": "runjs",
-        "target": "https://gitee.com/shuye72/MyActions/raw/main/jd_crazy_joy_coin.js"
       }
     },
     {
