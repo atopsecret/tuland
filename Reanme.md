@@ -1,2 +1,2 @@
-获取COOKIES，需打开资源解析器
+个人QuanX获取COOKIES
 https://raw.githubusercontent.com/atopsecret/tuland/main/GetCookies.sgmodule
