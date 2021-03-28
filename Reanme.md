@@ -1,3 +1,6 @@
+个人QuanX配置
+https://raw.githubusercontent.com/atopsecret/tuland/main/QuanX.conf
+
 个人QuanX获取COOKIES
 https://raw.githubusercontent.com/atopsecret/tuland/main/GetCookies.sgmodule
 
