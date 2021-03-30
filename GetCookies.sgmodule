@@ -2,8 +2,8 @@
 #!system=ios
 
 [MITM]
-hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com, api.myb6api.*:8080, jk.5apk.cn, 69shipin.vip, ws.60he.com, ftvn.hawsing.com.tw:3000, shopmember.m.jd.com, api.rcljx.com，
-
+hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientaccess.10086.cn, draw.jdfcloud.com, api.myb6api.*:8080, jk.5apk.cn, 69shipin.vip, ws.60he.com, ftvn.hawsing.com.tw:3000, shopmember.m.jd.com, api.rcljx.com, 
+magicisland.58.com, xzd.hswchangdu.com, ftoy-api.58.com, 
 [Script]
 
 京东 = type=http-request, pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
@@ -34,5 +34,11 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com, clientacces
 
 #解绑京东会员卡
 ^(https://shopmember.m.jd.com/member/membersRule\?(?!.*sign=member.*)) url 302 $1sign=member&
+
+#58同城
+https://magicisland.58.com/web/share/getShareUserInfo url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js
+https://xzd.hswchangdu.com/activityTreeMoney/watering url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js
+https://ftoy-api.58.com/wapi/zf_points_mall/api_sign_in? url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js
+https://xzd.hswchangdu.com/lotteryMachine/drawGoods? url script-request-header https://raw.githubusercontent.com/photonmang/quantumultX/master/58/58.js
 
 
