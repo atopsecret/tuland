@@ -2,7 +2,7 @@
 #!system=ios
 
 [MITM]
-hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com,
+hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com
 
 [Script]
 
