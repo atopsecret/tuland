@@ -6,25 +6,17 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com
 
 [Script]
 
-#京东到家
-daojia.jd.com/html/index.html url script-request-header https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_getck.js 
+
 
 # lxk0301获取多账号京东Cookie
 https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion url script-request-header https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js
 # 野比获取cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
-# 小米运动
-^https:\/\/account\.huami\.com\/v2\/client\/login url script-response-body https://jdsharedresourcescdn.azureedge.net/jdresource/xmSports.js
 
 #jx财富岛
 ^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 ^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 ^https\:\/\/m\.jingxi\.com\/jxcfd\/consume\/CashOut url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 
-
-#京喜
-^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
-^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
-^https\:\/\/m\.jingxi\.com\/jxcfd\/consume\/CashOut url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 
