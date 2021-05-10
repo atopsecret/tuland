@@ -10,7 +10,8 @@ hostname = api.m.jd.com, account.huami.com, wq.jd.com, m.jingxi.com
 # lxk0301获取多账号京东Cookie
 https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion url script-request-header https://jdsharedresourcescdn.azureedge.net/jdresource/JD_extra_cookie.js
 
-
+# 野比获取cookie
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
 
 
